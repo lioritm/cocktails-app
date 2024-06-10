@@ -31,7 +31,7 @@ const SingleCocktail = (cocktail: CocktailType) => {
               </div>
             )}
           </div>
-
+          <p>Ingrediants:</p>
           <div className="flex justify-center">
             <div className="ingrediat-table">
               <div className="table-col">
