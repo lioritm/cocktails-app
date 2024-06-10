@@ -1,0 +1,11 @@
+.alphabet > button {
+  font-size: 20px;
+  background: none;
+  margin-right: 0.5rem;
+  border: 1px solid #bbb;
+  margin-bottom: 1rem;
+}
+.alphabet > button.selected {
+  background: purple;
+  color: #fff;
+}

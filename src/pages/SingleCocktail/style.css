@@ -1,0 +1,39 @@
+.ingrediat-table {
+  display: flex;
+  border: 1px solid #000;
+}
+.table-col.ing {
+  border-left: 1px solid #000;
+}
+.table-col > div {
+  padding: 0.5rem;
+}
+.cocktail-wrapper {
+  max-width: 50%;
+  margin: 1rem auto;
+  border: 1px solid #ddd;
+  padding: 3rem;
+}
+.cocktail-wrapper .name {
+  text-align: center;
+  font-size: 25px;
+  padding-bottom: 1rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.cocktail-wrapper .image {
+  text-align: center;
+}
+.cocktail-wrapper .image > img {
+  width: 200px;
+}
+.cocktail-wrapper .info > div,
+.cocktail-wrapper .ingrediat-table {
+  margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .cocktail-wrapper {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,10 @@
+.back-btn {
+  background-color: #fff;
+  border: 1px solid #bbb;
+  height: 30px;
+  width: 100px;
+  justify-content: center;
+}
+.btn-text {
+  margin-left: 0.25rem;
+}

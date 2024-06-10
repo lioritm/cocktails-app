@@ -1,38 +1,60 @@
-.App {
+.flex {
+  display: flex;
+}
+.justify-center {
+  justify-content: center;
+}
+.align-center {
+  align-items: center;
+}
+.page-container {
+  padding: 2rem;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+  cursor: pointer;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.error-section {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 2rem;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.error-section .error {
+  font-size: 25px;
+  color: red;
+  font-weight: bold;
 }
-
-.App-link {
-  color: #61dafb;
+.error-section .back-to-homepage {
+  display: block;
+  margin: 1rem auto;
+  font-size: 20px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button {
+  border: 1px solid #ccc;
+  display: inline-block;
+  background: #ddd;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+}
+.button:hover {
+  background: #ccc;
+}
+.page-title {
+  text-align: center;
+}
+.general-text {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+input.error,
+textarea.error {
+  border: 1px solid #ff0000;
+}
+label.error {
+  color: #ff0000;
+}
+.error-message {
+  color: #ff0000;
+  margin-bottom: 1rem;
 }

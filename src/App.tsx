@@ -1,25 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import CocktailsProvider from "./context/CocktailsContext";
+import CocktailsPage from "./pages/Cocktails/CocktailsPage";
+import SingleCocktailPage from "./pages/SingleCocktail/SingleCocktailPage";
+import AddCocktailPage from "./pages/AddCocktail/AddCocktailPage";
+import Header from "./components/Header/Header";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <CocktailsProvider>
+        <BrowserRouter>
+          <Header />
+          <Routes>
+            <Route path="/" element={<CocktailsPage />} />
+            <Route
+              path="cocktails/:cocktailId"
+              element={<SingleCocktailPage />}
+            />
+            <Route path="/addNew" element={<AddCocktailPage />} />
+          </Routes>
+        </BrowserRouter>
+      </CocktailsProvider>
+    </>
   );
 }
 

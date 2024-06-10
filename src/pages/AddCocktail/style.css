@@ -1,0 +1,44 @@
+.page-container .new-cocktail-form {
+  max-width: 50%;
+  margin: 3rem auto;
+}
+
+.form-row {
+  margin-bottom: 1rem;
+}
+
+.page-container .add-ing {
+  margin: 0rem 0 1.5rem;
+  padding: 0.5rem;
+}
+.ing-row {
+  margin-bottom: 1rem;
+}
+.ing-row .ingredient {
+  margin-left: 1rem;
+}
+
+.submit-btn {
+  font-size: 20px;
+  padding: 0.5rem 1rem;
+  background: blue;
+  color: #fff;
+}
+.submit-btn:hover {
+  background: #5050f9;
+}
+.added-message {
+  text-align: center;
+  font-size: 30px;
+  padding: 2rem;
+}
+.added-message > a {
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .page-container .new-cocktail-form {
+    max-width: 100%;
+    margin: 2rem 0 0;
+  }
+}

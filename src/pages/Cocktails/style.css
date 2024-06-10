@@ -1,0 +1,51 @@
+.cocktail-img {
+  height: 150px;
+  width: 150px;
+  display: block;
+  margin: auto;
+}
+.cocktail-container {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+.cocktail-cell {
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+.cocktail-name {
+  background-color: #000;
+  color: #000;
+  text-decoration: none;
+  display: block;
+  color: #fff;
+  max-width: 150px;
+  margin: auto;
+}
+.add-new {
+  padding: 1rem 2rem;
+  background: #ddd;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  text-decoration: none;
+  color: #000;
+}
+
+.add-new > a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.not-found {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  width: 100%;
+  margin-top: 1rem;
+}
+@media only screen and (max-width: 600px) {
+  .add-new {
+    padding: 1rem 0.25rem;
+    font-size: 12px;
+  }
+}
